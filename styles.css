@@ -1,0 +1,24 @@
+body {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  background-color: darkcyan;
+  background-opacity: 10%;
+  display: inline-block;
+}
+
+input {
+  border-color: chocolate;
+  border-width: 3px;
+  margin: 10px auto;
+  padding: 5px 5px;
+  display: block;
+  width: 400px;
+}
+
+.button {
+  margin-top: 50px;
+}
+
+label#name.name {
+  color: blue;
+}
