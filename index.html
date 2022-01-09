@@ -9,22 +9,42 @@
   </head>
   <body>
     <h1 id="title">freeCodeCamp Survey Form</h1>
-    <h4 id="description">
+    <p id="description">
       Thank you for taking the time to help us improve the platform
-    </h4>
+    </p>
 
-    <form>
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" placeholder="Your Name" />
-      <label for="mail">E-Mail</label>
-      <input type="mail" id="mail" name="mail" placeholder="Your Email" />
-      <label for="age">Age</label>
-      <input type="number" id="age" name="age" placeholder="Your Age" />
-      <label for="current-role"
+    <form id="survey-form">
+      <label for="name" id="name-label">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your Name"
+        required
+      />
+      <label for="email" id="email-label">E-Mail</label>
+      <input
+        type="email"
+        id="email"
+        name="mail"
+        placeholder="Your Email"
+        required
+      />
+      <label for="number" id="number-label">Age</label>
+      <input
+        type="number"
+        id="number"
+        name="age"
+        placeholder="Your Age"
+        min="15"
+        max="200"
+        required
+      />
+      <label for="dropdown"
         >Which option best describes your current role?</label
       >
 
-      <select name="role" id="current-role" name="current-role">
+      <select name="role" id="dropdown" name="current-role">
         <option value="null">--</option>
         <option value="student">Student</option>
         <option value="full-time">Full time</option>
@@ -37,14 +57,22 @@
           type="radio"
           id="def"
           name="recommend"
+          value="def"
           required
         />Definately</label
       >
       <label for="maybe" class="radio"
-        ><input type="radio" id="maybe" name="recommend" required />Maybe</label
+        ><input
+          type="radio"
+          id="maybe"
+          name="recommend"
+          value="maybe"
+          required
+        />Maybe</label
       >
       <label for="no" class="radio"
-        ><input type="radio" id="no" name="recommend" required />Not Sure</label
+        ><input type="radio" id="no" name="recommend" value="no" required />Not
+        Sure</label
       >
       <label for="feature"
         >What is your favorite feature of freeCodeCamp?</label
@@ -61,27 +89,27 @@
         <small>(Check all that apply)</small></label
       >
       <label for="fe-project">Front-end Projects</label>
-      <input type="checkbox" id="fe-project" name="improvement" />
+      <input type="checkbox" value="fe-project" name="improvement" />
       <label for="be-project">Back-end Projects</label>
-      <input type="checkbox" id="be-project" name="improvement" />
+      <input type="checkbox" value="be-project" name="improvement" />
       <label for="visualization">Data Visualization</label>
-      <input type="checkbox" id="visualization" name="improvement" />
+      <input type="checkbox" value="visualization" name="improvement" />
       <label for="challange">Challenges</label>
-      <input type="checkbox" id="challange" name="improvement" />
+      <input type="checkbox" value="challange" name="improvement" />
       <label for="open-sourcecomm">Open Source Community</label>
-      <input type="checkbox" id="open-sourcecomm" name="improvement" />
+      <input type="checkbox" value="open-sourcecomm" name="improvement" />
       <label for="help-rooms">Gitter help rooms</label>
-      <input type="checkbox" id="help-rooms" name="improvement" />
+      <input type="checkbox" value="help-rooms" name="improvement" />
       <label for="videos">Videos</label>
-      <input type="checkbox" id="videos" name="improvement" />
+      <input type="checkbox" value="videos" name="improvement" />
       <label for="meetups">City Meetups</label>
-      <input type="checkbox" id="meetups" name="improvement" />
+      <input type="checkbox" value="meetups" name="improvement" />
       <label for="wiki">Wiki</label>
-      <input type="checkbox" id="wiki" name="improvement" />
+      <input type="checkbox" value="wiki" name="improvement" />
       <label for="forum">Forum</label>
-      <input type="checkbox" id="forum" name="improvement" />
+      <input type="checkbox" value="forum" name="improvement" />
       <label for="cources">Additional Courses</label>
-      <input type="checkbox" id="cources" name="improvement" />
+      <input type="checkbox" value="cources" name="improvement" />
       <label for="additional">Any comments or suggestions?</label>
       <textarea
         name="additional"
