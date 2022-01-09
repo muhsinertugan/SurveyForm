@@ -13,23 +13,85 @@
       Thank you for taking the time to help us improve the platform
     </h4>
 
-    <form id="survey-form">
-      <label for="name" class="name" id="name">Name</label
-      ><input id="name" type="text" />
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" />
+      <label for="mail">E-Mail</label>
+      <input type="mail" id="mail" name="mail" placeholder="Your Email" />
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Your Age" />
+      <label for="current-role"
+        >Which option best describes your current role?</label
+      >
 
-      <label for="name" class="name" id="name">Name</label
-      ><input id="name" type="text" />
+      <select name="role" id="current-role" name="current-role">
+        <option value="null">--</option>
+        <option value="student">Student</option>
+        <option value="full-time">Full time</option>
+        <option value="part-time">Part-time</option>
+        <option value="other">Other</option></select
+      >
+      <label>Would you recommend freeCodeCamp to a friend?</label>
+      <label for="def" class="radio"
+        ><input
+          type="radio"
+          id="def"
+          name="recommend"
+          required
+        />Definately</label
+      >
+      <label for="maybe" class="radio"
+        ><input type="radio" id="maybe" name="recommend" required />Maybe</label
+      >
+      <label for="no" class="radio"
+        ><input type="radio" id="no" name="recommend" required />Not Sure</label
+      >
+      <label for="feature"
+        >What is your favorite feature of freeCodeCamp?</label
+      >
+      <select name="feature" id="feature">
+        <option value="empty">--</option>
+        <option value="challange">Challanges</option>
+        <option value="project">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open Source</option>
+      </select>
+      <label for=""
+        >What would you like to see improved?
+        <small>(Check all that apply)</small></label
+      >
+      <label for="fe-project">Front-end Projects</label>
+      <input type="checkbox" id="fe-project" name="improvement" />
+      <label for="be-project">Back-end Projects</label>
+      <input type="checkbox" id="be-project" name="improvement" />
+      <label for="visualization">Data Visualization</label>
+      <input type="checkbox" id="visualization" name="improvement" />
+      <label for="challange">Challenges</label>
+      <input type="checkbox" id="challange" name="improvement" />
+      <label for="open-sourcecomm">Open Source Community</label>
+      <input type="checkbox" id="open-sourcecomm" name="improvement" />
+      <label for="help-rooms">Gitter help rooms</label>
+      <input type="checkbox" id="help-rooms" name="improvement" />
+      <label for="videos">Videos</label>
+      <input type="checkbox" id="videos" name="improvement" />
+      <label for="meetups">City Meetups</label>
+      <input type="checkbox" id="meetups" name="improvement" />
+      <label for="wiki">Wiki</label>
+      <input type="checkbox" id="wiki" name="improvement" />
+      <label for="forum">Forum</label>
+      <input type="checkbox" id="forum" name="improvement" />
+      <label for="cources">Additional Courses</label>
+      <input type="checkbox" id="cources" name="improvement" />
+      <label for="additional">Any comments or suggestions?</label>
+      <textarea
+        name="additional"
+        id="additional"
+        cols="30"
+        rows="10"
+        placeholder="Your Comments.."
+      ></textarea>
 
-      <label for="name" class="name" id="name">Name</label
-      ><input id="name" type="text" />
-
-      <label for="option">Class</label>
-      <input class="option" id="option" type="radio" />
-      <label for="option">Class</label>
-      <input class="option" id="options" type="radio" />
-      <label for="option">Class</label>
-      <input class="option" id="option" type="radio" />
-      <input class="button" type="submit" />
+      <input type="submit" id="submit" />
     </form>
   </body>
 </html>
